@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+header {
+	margin-top: 175px;
+}
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+/*
+p.first{
+	font-size:18px
+	text-align:left;
+	padding:12px 24px;
+}
+*/
+
+.shadow {
+-webkit-border-radius: 0% 0% 100% 100% / 0% 0% 8px 8px;
+-webkit-box-shadow: rgba(0, 0, 0,.30) 0 2px 3px;
+}
+.container {
+  margin: 0 auto;
+  margin-top: 50px;;
+
+  height: 80vh;
+  background: #F2F2F2;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 2px #fff inset,
+              -1px -1px 2px #fff inset;
+  border-radius: 3px/6px;         
+   
+    
+}
+
+div.a {
+	position:absolute;
+	right:25px;
+}
+
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Active Minds</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#form" class="w3-bar-item w3-button">Form</a>
+      <a href="#resources" class="w3-bar-item w3-button">Resources</a>
+      <a href="discussion.html" class="w3-bar-item w3-button">Discussion</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Depression Awareness</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="https://medicaldialogues.in/h-upload/2020/06/09/1600x960_130051-depression.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-padding-large">
+      <h1 class="w3-center">About Depression</h1><br>
+      <!-- use w3-large if first doesn't work -->
+      <p class="first">Depression is a very common and serious mental illness. It affects more than 264 million people. Depression can cause various emotional and physical problems; depression can result in feelings of sadness, loss of interest in activities that once used to bring joy, inability to properly learn at school and more. Depression needs to be taken completely seriously because it can affect physical health and even cause suicide. It is important to understand the symptoms of depression (anxiety, disturbed sleep & appetite, lack of self-love, etc) so you can help out family members and peers who may be depressed. Raising awareness of depression, the main goal of this website, is also extremely important so that people know how to get help, are more knowledgeable on the subject and can contribute to getting rid of the stigma around depression. Take the depression self-test form to see if you exhibit symptoms of depression. Do NOT self-diagnose based on the results of the test. The test will instead help you determine whether you need to keep track of your symptoms and it will tell you what can you do to relieve your symptoms if you have any. Visit the resources page if you want to learn more about the topic of depression. If you have any questions or comments make sure to post them on the discussions page!</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Form Section -->
+    <div class="w3-container w3-padding-64" id="form">
+    <h1>Depression Self Test</h1><br>
+    <p class="w3-text-blue-grey w3-large"><b>Answer the following questions. 1 stands for "not at all" and 5 stands for "definitely."</b></p>
+    <form action="/action_page.php" target="_blank">
+      <p>1. Do you have frequent overwhelming feelings of sadness, irritation, and hopelessness?</p>
+      <input type="radio" name="q0" value = "1">1   
+      <input type="radio" name="q0" value = "2" style="margin-left:10px;"> 2      
+      <input type="radio" name="q0" value = "3" style="margin-left:10px;"> 3   
+      <input type="radio" name="q0" value = "4" style="margin-left:10px;"> 4  
+      <input type="radio" name="q0" value = "5" style="margin-left:10px;"> 5 
+      <p>2. Have you been engaging in activities that interest you and bring joy recently?</p>
+      <input type="radio" name="q1" value = "1">1   
+      <input type="radio" name="q1" value = "2" style="margin-left:10px;"> 2      
+      <input type="radio" name="q1" value = "3" style="margin-left:10px;"> 3   
+      <input type="radio" name="q1" value = "4" style="margin-left:10px;"> 4  
+      <input type="radio" name="q1" value = "5" style="margin-left:10px;"> 5  
+      <p>3. Have you been have trouble sleeping lately?</p>
+      <input type="radio" name="q2" value = "1">1   
+      <input type="radio" name="q2" value = "2" style="margin-left:10px;"> 2      
+      <input type="radio" name="q2" value = "3" style="margin-left:10px;"> 3   
+      <input type="radio" name="q2" value = "4" style="margin-left:10px;"> 4  
+      <input type="radio" name="q2" value = "5" style="margin-left:10px;"> 5 
+      <p>4. Have you been feeling very exhausted recently?</p>
+      <input type="radio" name="q3" value = "1">1   
+      <input type="radio" name="q3" value = "2" style="margin-left:10px;"> 2      
+      <input type="radio" name="q3" value = "3" style="margin-left:10px;"> 3   
+      <input type="radio" name="q3" value = "4" style="margin-left:10px;"> 4  
+      <input type="radio" name="q3" value = "5" style="margin-left:10px;"> 5
+      <p>5. Have you been suffering with feelings suggesting that you are a failure or a disappointment?</p>
+      <input type="radio" name="q4" value = "1">1   
+      <input type="radio" name="q4" value = "2" style="margin-left:10px;"> 2      
+      <input type="radio" name="q4" value = "3" style="margin-left:10px;"> 3   
+      <input type="radio" name="q4" value = "4" style="margin-left:10px;"> 4  
+      <input type="radio" name="q4" value = "5" style="margin-left:10px;"> 5  
+      <p>6. Are you struggling to concentrate on certain activities like doing homework?</p>
+      <input type="radio" name="q5" value = "1">1   
+      <input type="radio" name="q5" value = "2" style="margin-left:10px;"> 2      
+      <input type="radio" name="q5" value = "3" style="margin-left:10px;"> 3   
+      <input type="radio" name="q5" value = "4" style="margin-left:10px;"> 4  
+      <input type="radio" name="q5" value = "5" style="margin-left:10px;"> 5 
+      <p>7. Have you been more restless than usual?</p>
+      <input type="radio" name="q6" value = "1">1   
+      <input type="radio" name="q6" value = "2" style="margin-left:10px;"> 2      
+      <input type="radio" name="q6" value = "3" style="margin-left:10px;"> 3   
+      <input type="radio" name="q6" value = "4" style="margin-left:10px;"> 4  
+      <input type="radio" name="q6" value = "5" style="margin-left:10px;"> 5 
+      <p>8. Do you have constant thoughts suggesting that you would be better off dead?</p>
+      <input type="radio" name="q7" value = "1">1   
+      <input type="radio" name="q7" value = "2" style="margin-left:10px;"> 2      
+      <input type="radio" name="q7" value = "3" style="margin-left:10px;"> 3   
+      <input type="radio" name="q7" value = "4" style="margin-left:10px;"> 4  
+      <input type="radio" name="q7" value = "5" style="margin-left:10px;"> 5 
+      <p>9. Have you thought of hurting yourself or have hurt yourself on purpose?</p>
+      <input type="radio" name="q8" value = "1">1   
+      <input type="radio" name="q8" value = "2" style="margin-left:10px;"> 2      
+      <input type="radio" name="q8" value = "3" style="margin-left:10px;"> 3   
+      <input type="radio" name="q8" value = "4" style="margin-left:10px;"> 4  
+      <input type="radio" name="q8" value = "5" style="margin-left:10px;"> 5 
+      <p>10. Have you been eating too much or too little lately?</p>
+      <input type="radio" name="q9" value = "1">1   
+      <input type="radio" name="q9" value = "2" style="margin-left:10px;"> 2      
+      <input type="radio" name="q9" value = "3" style="margin-left:10px;"> 3   
+      <input type="radio" name="q9" value = "4" style="margin-left:10px;"> 4  
+      <input type="radio" name="q9" value = "5" style="margin-left:10px;"> 5 
+      
+      <p><button type="button" class= "w3-button w3-light-grey" onclick="getScore();">Submit</button></p>
+    </form>
+  </div>
+  <hr>
+  <!-- Resources Section -->
+  <div class="w3-row w3-padding-64" id="resources">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Resources to learn more</h1><br>
+      <div class="a">
+      <img src="https://www.teachsecondary.com/images/uploads/6-digital-resources.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="550" height="650" >
+	</div>
+  <p class="w3-text-grey"><a href="https://adaa.org/understanding-anxiety/depression">https://adaa.org/understanding-anxiety/depression</a></p>
+    	<p style="margin-left: 25px;">Gives a wonderful description on depression and anxiety, while also differentiating between the two. Has links to really helpful webinars and blog posts.</p>
+
+      
+      <p class="w3-text-grey"><a href="https://www.who.int/news-room/fact-sheets/detail/depression">https://www.who.int/news-room/fact-sheets/detail/depression</a></p>
+   		<p style="margin-left: 25px;">Greatly describes what depression is, how do you know if you are depressed, how can you prevent it and what can you do about if you are depressed.</p>
+   		
+      <p class="w3-text-grey"><a href="https://www.psychiatry.org/patients-families/depression/what-is-depression">https://www.psychiatry.org/patients-families/depression/what-is-depression</a></p>
+ 		<p style="margin-left: 25px;">Provides in-depth information about depression and similar disorders, treatment options, and how to differentiate between depression and other disorders.</p>
+ 		
+      <p class="w3-text-grey"><a href= "https://www.mayoclinic.org/diseases-conditions/mental-illness/in-depth/mental-health/art-20046477" >https://www.mayoclinic.org/diseases-conditions/mental-illness/in-depth/mental-health/art-20046477</a></p>
+		<p style="margin-left: 25px;">Great resource on the stigma of mental illness. Tells how to cope with it and how you can help overcome it.</p>
+
+      <p class="w3-text-grey"><a href= "https://www.samhsa.gov/find-help/national-helpline">https://www.samhsa.gov/find-help/national-helpline</a></p>    
+      	<p style="margin-left: 25px;">This is a link to a national helpline that provides assistance with people/families dealing with mental disorders or struggling with substance use. Great resource if you want to talk to someone.</p>
+      
+      <p class="w3-text-grey"><a href= "https://www.psychiatry.org/patients-families/depression">https://www.psychiatry.org/patients-families/depression</a></p>    
+      	<p style="margin-left: 25px;">Tells what depression is and the symptoms. Use this website if you are interested in talking to a psychiatrist as the website will help you find one. Has many different helpful resources like blogposts and patient stories.</p>
+      	
+      <p class="w3-text-grey"><a href= "https://www.healthline.com/health/depression/help-for-depression">https://www.healthline.com/health/depression/help-for-depression</a></p>    
+      	<p style="margin-left: 25px;">Great if you are interested in learning about treatment options (like medicine and therapy). Has the numbers of helplines if you want someone to talk to about mental illness.</p>
+      
+      <p class="w3-text-grey"><a href="https://www.nimh.nih.gov/health/publications/depression/index.shtml">https://www.nimh.nih.gov/health/publications/depression/index.shtml</a></p>    
+      	<p style="margin-left: 25px;">Gives basic overview of depression. Amazing resource if you want a basic idea of what depression is.</p>
+    </div>
+ 
+  </div>
+  
+ 
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Made by Shriya Mahakala</p>
+</footer>
+
+<script type="text/javascript">
+var answers = ["1", "2", "3", "4", "5"];
+function getCheckedValue(radioName){
+    var radios = document.getElementsByName( radioName ); // Get radio group by-name
+    for(var y=0; y<radios.length; y++){
+    	if(radios[y].checked){
+    		return radios[y].value; // return the checked value
+    	}
+    }
+      
+}
+
+function getScore(){
+	  var score = 0;
+	  var value;
+	  for (var i=0; i<10; i++){
+		value = getCheckedValue("q"+i)
+	    if(value===answers[0]){
+	    	score += 1; 
+	    }
+	    else if(value===answers[1]){
+	    	score +=2;
+	    }
+	    else if(value===answers[2]){
+	    	score +=3;
+	    }
+	    else if(value===answers[3]){
+	    	score +=4;
+	    }
+	    else{
+	    	score+=5;
+	    }
+	  if (score>15){
+		  window.location.replace("middle.html");
+	  }
+	  else if (score>40){
+		  window.location.replace("high.html");
+	  }
+	  else{
+		  window.location.replace("low.html");
+	  }
+	}
+}
+</script>
+</body>
+
+</html>

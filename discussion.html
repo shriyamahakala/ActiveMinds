@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Discussion</title>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+#comments th{
+	background-color: #008080;
+	color: white; 
+}
+header {
+	margin-top: 175px;
+}
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+/*
+p.first{
+	font-size:18px
+	text-align:left;
+	padding:12px 24px;
+}
+*/
+</style>
+</head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Active Minds</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+    </div>
+  </div>
+</div>
+<a href="app.html">
+<img src="return.png" alt="Table Setting" width="40" height="40" style="margin-top: 60px">
+</a>
+
+<h1 class="w3-xxlarge" style="text-align:center">Comments</h1>
+<table id="comments">
+	<tr>
+		<th>Name</th>
+		<th>Date</th>
+		<th>Title</th>
+		<th>Comment</th>
+	</tr>
+	<tr>
+		<td>John Green</td>
+		<td>10/09/2020</td>
+		<td>Hello</td>
+		<td>Great Website. It is really educational!</td>
+	</tr>
+	<tr>
+		<td>Rick Riordan</td>
+		<td>10/01/2020</td>
+		<td>Question</td>
+		<td>What are some relaxation techniques I can use?</td>
+	</tr>
+</table>
+ 		
+<h1 class="w3-xxlarge" style="text-align:center">New Comment</h1>
+	<form id="newComment" style="text-align:center">
+  		<label for="name">Name:</label><br>
+  		<input type="text" id="name" name="name"><br>
+  		<label for="date">Date: </label><br>
+  		<input type="text" id="date" name="date"><br>
+  		<label for="title">Title:</label><br>
+  		<input type="text" id="title" name="title"><br>
+  		<label for="comment">Comment: </label><br>
+  		<input type="text" id="comment" name="comment">
+  		<input type="submit" id="submit" name="submit" value="Post" onclick="writeComment();return false;">
+</form>
+<script> 
+	function writeComment(){
+
+		var table=document.getElementById("comments");
+		var row=table.insertRow(1);
+		var nameCell = row.insertCell(0);
+		var dateCell = row.insertCell(1);
+		var titleCell = row.insertCell(2);
+		var commentCell = row.insertCell(3);
+		var name = document.getElementById("name").value;
+		var date = document.getElementById("date").value;
+		var title = document.getElementById("title").value;
+		var comment = document.getElementById("comment").value;
+		
+		nameCell.innerHTML = name;
+		dateCell.innerHTML = date;
+		titleCell.innerHTML = title;
+		commentCell.innerHTML = comment;
+		
+		document.getElementById("newComment").reset();
+		
+	}
+
+
+</script>
+
+</body>
+</html>
